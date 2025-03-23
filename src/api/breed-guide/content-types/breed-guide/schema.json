@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "breed_guides",
+  "info": {
+    "singularName": "breed-guide",
+    "pluralName": "breed-guides",
+    "displayName": "breed-guide"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "size_category": {
+      "type": "enumeration",
+      "enum": [
+        "Small",
+        "Medium",
+        "Large",
+        "Giant"
+      ]
+    },
+    "height": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "coat_texture": {
+      "type": "string"
+    },
+    "coat_colors": {
+      "type": "string"
+    },
+    "coat_features": {
+      "type": "string"
+    },
+    "gromming": {
+      "type": "richtext"
+    },
+    "temperament": {
+      "type": "richtext"
+    },
+    "training": {
+      "type": "richtext"
+    },
+    "lifespan": {
+      "type": "string"
+    },
+    "weather_compatibility": {
+      "type": "richtext"
+    },
+    "verdict": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
